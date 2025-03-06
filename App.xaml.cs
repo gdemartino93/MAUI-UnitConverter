@@ -1,4 +1,6 @@
-﻿namespace MAUI_UnitConverter
+﻿using MAUI_UnitConverter.Views;
+
+namespace MAUI_UnitConverter
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new MenuView();
         }
     }
 }
