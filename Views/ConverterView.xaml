@@ -17,11 +17,13 @@
                 <Entry
                     FontSize="100"
                     HorizontalTextAlignment="Center"
-                    Text="1"
+                    ReturnCommand="{Binding ReturnCommand}"
+                    Text="{Binding FromValue}"
                     TextColor="{StaticResource text-color}" />
                 <Picker
                     HorizontalOptions="Center"
                     ItemsSource="{Binding FromMeasures}"
+                    SelectedIndexChanged="Picker_SelectedValueChanged"
                     SelectedItem="{Binding CurrentFromMeasure}"
                     TextColor="{StaticResource text-color}" />
             </VerticalStackLayout>
@@ -31,11 +33,12 @@
                 <Label
                     FontSize="100"
                     HorizontalTextAlignment="Center"
-                    Text="100"
+                    Text="{Binding ToValue, StringFormat='{0:0.##}'}"
                     TextColor="{StaticResource text-color}" />
                 <Picker
                     HorizontalOptions="Center"
                     ItemsSource="{Binding ToMeasures}"
+                    SelectedIndexChanged="Picker_SelectedValueChanged"
                     SelectedItem="{Binding CurrentToMeasure}"
                     TextColor="{StaticResource text-color}" />
             </VerticalStackLayout>

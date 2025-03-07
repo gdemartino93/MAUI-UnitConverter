@@ -9,4 +9,10 @@ public partial class ConverterView : ContentPage
 		InitializeComponent();
 		BindingContext = new ConverterViewModel();
 	}
+
+    private void Picker_SelectedValueChanged(object sender, EventArgs e)
+    {
+		var context = (ConverterViewModel)BindingContext;
+		context.Convert();
+    }
 }
