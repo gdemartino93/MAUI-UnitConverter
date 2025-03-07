@@ -3,7 +3,8 @@
     x:Class="MAUI_UnitConverter.Views.MenuView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="MenuView">
+    Title="MenuView"
+    NavigationPage.HasNavigationBar="False">
 
     <ContentPage.Resources>
         <Color x:Key="Color1">#0e76bd</Color>
