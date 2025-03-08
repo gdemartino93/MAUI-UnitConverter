@@ -45,7 +45,7 @@ namespace MAUI_UnitConverter.ViewModels
             FromMeasures = LoadMeasures();
             ToMeasures = LoadMeasures();
             CurrentFromMeasure = FromMeasures.FirstOrDefault();
-            CurrentToMeasure = ToMeasures.FirstOrDefault();
+            CurrentToMeasure = ToMeasures.Skip(1).FirstOrDefault();
             Convert();
         }
 

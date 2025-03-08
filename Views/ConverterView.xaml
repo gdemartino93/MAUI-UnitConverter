@@ -3,7 +3,7 @@
     x:Class="MAUI_UnitConverter.Views.ConverterView"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="ConverterView">
+    Title="{Binding QuantityName}">
     <ContentPage.Resources>
         <Color x:Key="Color1">#0e76bd</Color>
         <Color x:Key="Color2">#0a598e</Color>
