@@ -39,13 +39,13 @@ namespace MAUI_UnitConverter.ViewModels
             return new ObservableCollection<string>();
         }
 
-        public ConverterViewModel()
+        public ConverterViewModel(string quantityName)
         {
-            QuantityName = "Length";
+            QuantityName = quantityName;
             FromMeasures = LoadMeasures();
             ToMeasures = LoadMeasures();
-            CurrentFromMeasure = "Meter";
-            CurrentToMeasure = "Centimeter";
+            CurrentFromMeasure = FromMeasures.FirstOrDefault();
+            CurrentToMeasure = ToMeasures.FirstOrDefault();
             Convert();
         }
 

@@ -8,7 +8,7 @@ namespace MAUI_UnitConverter
         {
             InitializeComponent();
 
-            MainPage = new ConverterView();
+            MainPage = new NavigationPage(new MenuView());
         }
     }
 }

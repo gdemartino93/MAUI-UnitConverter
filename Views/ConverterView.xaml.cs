@@ -7,7 +7,6 @@ public partial class ConverterView : ContentPage
 	public ConverterView()
 	{
 		InitializeComponent();
-		BindingContext = new ConverterViewModel();
 	}
 
     private void Picker_SelectedValueChanged(object sender, EventArgs e)
